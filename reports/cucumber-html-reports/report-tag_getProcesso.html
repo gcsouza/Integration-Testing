@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Tag: @getProcesso</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>integration-testing - System Testing Execution Report</td>
+              <td>1</td>
+            <td>09 dez 2020, 22:02</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@getProcesso</td>
+                    <td      class="passed"    >13</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">15</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1616377400">1.616</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_user-crudProcesso-feature.html">CRUD de Processo Judicial</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_getProcesso.html">@getProcesso</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.616</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Cen&aacute;rio</span>
+  <span class="name">Consultar um Processo Judicial J&aacute; Criado - GET</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Dado</span>
+  <span class="name">o usu&aacute;rio clicar no botao salvar</span>
+  
+  <span class="lead-duration duration">0.475</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>METHOD: [ POST (Request) ]</p><p>Endpoint: [ http://agapito-server.herokuapp.com/processos ]</p><p>Headers: [ Accept=application/json, application/javascript, text/javascript
+Content-Type=application/json; charset=UTF-8 ]</p><p>Body - Request: [ {arbitramento=N, assistente_social=Ana Paula, data_agendamento=11/02/2021, data_entrada=05/12/2020, data_saida=12/02/2021, natureza=Criminal, numero_processo=00001732498, observacao=N/A, partes=Cristina Oliveira, status=Conclu&iacute;do, urgente=N, vara=Vara 3} ]</p><p>------------------------------------</p><p>METHOD: [ POST (Response) ]</p><p>Status Code: [ 201 ]</p><p>Response: [ {&quot;id&quot;:2266,&quot;vara&quot;:&quot;Vara 3&quot;,&quot;numero_processo&quot;:&quot;00001732498&quot;,&quot;natureza&quot;:&quot;Criminal&quot;,&quot;partes&quot;:&quot;Cristina Oliveira&quot;,&quot;urgente&quot;:&quot;N&quot;,&quot;arbitramento&quot;:&quot;N&quot;,&quot;assistente_social&quot;:&quot;Ana Paula&quot;,&quot;data_entrada&quot;:&quot;2020-12-05&quot;,&quot;data_saida&quot;:&quot;2021-02-12&quot;,&quot;data_agendamento&quot;:&quot;2021-02-11&quot;,&quot;status&quot;:&quot;Conclu&Atilde;&shy;do&quot;,&quot;observacao&quot;:&quot;N/A&quot;,&quot;created_at&quot;:&quot;2020-12-10T00:02:28.387Z&quot;,&quot;updated_at&quot;:&quot;2020-12-10T00:02:28.387Z&quot;,&quot;url&quot;:&quot;http://agapito-server.herokuapp.com/processos/2266.json&quot;} ]</p><p></p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Quando</span>
+  <span class="name">o usu&aacute;rio clicar em mostrar</span>
+  
+  <span class="lead-duration duration">0.808</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-5">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-5" class="collapse collapsable-details " >
+          
+          <pre><p>METHOD: [ GET (Request) ]</p><p>Endpoint: [ http://agapito-server.herokuapp.com/processos/2266 ]</p><p>Headers: [ Accept=application/json, application/javascript, text/javascript
+Content-Type=application/json; charset=UTF-8 ]</p><p>Body - Request: [  ]</p><p>------------------------------------</p><p>METHOD: [ GET (Response) ]</p><p>Status Code: [ 200 ]</p><p>Response: [ {&quot;id&quot;:2266,&quot;vara&quot;:&quot;Vara 3&quot;,&quot;numero_processo&quot;:&quot;00001732498&quot;,&quot;natureza&quot;:&quot;Criminal&quot;,&quot;partes&quot;:&quot;Cristina Oliveira&quot;,&quot;urgente&quot;:&quot;N&quot;,&quot;arbitramento&quot;:&quot;N&quot;,&quot;assistente_social&quot;:&quot;Ana Paula&quot;,&quot;data_entrada&quot;:&quot;2020-12-05&quot;,&quot;data_saida&quot;:&quot;2021-02-12&quot;,&quot;data_agendamento&quot;:&quot;2021-02-11&quot;,&quot;status&quot;:&quot;Conclu&Atilde;&shy;do&quot;,&quot;observacao&quot;:&quot;N/A&quot;,&quot;created_at&quot;:&quot;2020-12-10T00:02:28.387Z&quot;,&quot;updated_at&quot;:&quot;2020-12-10T00:02:28.387Z&quot;,&quot;url&quot;:&quot;http://agapito-server.herokuapp.com/processos/2266.json&quot;} ]</p><p></p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Ent&atilde;o</span>
+  <span class="name">o usu&aacute;rio dever&aacute; ver a mensagem &quot;sucesso&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;vara&quot; com o valor &quot;Vara 3&quot;</span>
+  
+  <span class="lead-duration duration">0.022</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;numero_processo&quot; com o valor &quot;00001732498&quot;</span>
+  
+  <span class="lead-duration duration">0.023</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;natureza&quot; com o valor &quot;Criminal&quot;</span>
+  
+  <span class="lead-duration duration">0.024</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;partes&quot; com o valor &quot;Cristina Oliveira&quot;</span>
+  
+  <span class="lead-duration duration">0.019</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;urgente&quot; com o valor &quot;N&quot;</span>
+  
+  <span class="lead-duration duration">0.019</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;arbitramento&quot; com o valor &quot;N&quot;</span>
+  
+  <span class="lead-duration duration">0.024</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;assistente_social&quot; com o valor &quot;Ana Paula&quot;</span>
+  
+  <span class="lead-duration duration">0.023</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;data_entrada&quot; com o valor &quot;2020-12-05&quot;</span>
+  
+  <span class="lead-duration duration">0.042</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;data_saida&quot; com o valor &quot;2021-02-12&quot;</span>
+  
+  <span class="lead-duration duration">0.056</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;data_agendamento&quot; com o valor &quot;2021-02-11&quot;</span>
+  
+  <span class="lead-duration duration">0.043</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;status&quot; com o valor &quot;Conclu&iacute;do&quot;</span>
+  
+  <span class="lead-duration duration">0.031</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.junit.ComparisonFailure: expected:&lt;Conclu[&iacute;]do&gt; but was:&lt;Conclu[&Atilde;&shy;]do&gt;</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.junit.ComparisonFailure: expected:&lt;Conclu[&iacute;]do&gt; but was:&lt;Conclu[&Atilde;&shy;]do&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ProcessoSteps.oUsuarioVisualizaraOCampoComOValor(ProcessoSteps.java:55)
+	at &#10045;.E o usu&aacute;rio visualizar&aacute; o campo &quot;status&quot; com o valor &quot;Conclu&iacute;do&quot;(user/crudProcesso.feature:40)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">E</span>
+  <span class="name">o usu&aacute;rio visualizar&aacute; o campo &quot;observacao&quot; com o valor &quot;N/A&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-7" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.afterScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
